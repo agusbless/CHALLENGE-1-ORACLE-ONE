@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://kit.fontawesome.com/0b91cc8099.js" crossorigin="anonymous"></script>
+  <title>Challenge1 - Oracle Next Education</title>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="./img/Logo.png" alt="logo">
+    </div>
+    <div class="titulo">
+      <h2>Encriptador de texto</h2>
+    </div>
+  </header>
+
+  <main class="contenido">
+    <section class="principal">
+      <textarea placeholder="Ingrese un texto aquí" name="texto" id="texto" cols="50" rows="10" autofocus></textarea>
+      <p class="alerta" ><i class="fa-solid fa-circle-exclamation"></i>Solo letras minúsculas y sin acentos</p>
+      <div class="button">
+        <button class="btn b1" type="button" onclick="encriptador()">Encriptar</button>
+        <button class="btn b2" type="button" onclick="desencriptar()">Desencriptar</button>
+      </div>
+    </section>
+
+    <section class="mensajem">
+      <div class="resultado">
+        <img id="imgmuneco" class="imagen1" width="230px" height="230px" src="./img/Muñeco.png" alt="muñeco">
+        <h5 id="mensajetitulo" class="mensajetitulo">Ningún mensaje fue encontrado</h5>
+        <textarea class="text2" name="" id="text2" cols="30" rows="8">Ingrese el texto que desees encriptar o desencriptar.</textarea>
+      </div>
+      <div class="area-oculta">
+        <button onclick="copiartext()" id="copiar" class="copiar">copiar</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="./Javascripts/script.js"></script>
+
+</body>
+</html>
